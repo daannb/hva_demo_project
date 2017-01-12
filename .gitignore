@@ -1,0 +1,37 @@
+# local settings
+site_settings.py
+
+# Python bytecode:
+*.py[co]
+.pyc
+
+# Packaging files:
+*.egg*
+
+
+# SQLite3 database files:
+*.db
+
+# tox:
+.tox/
+
+# coverage
+.coverage
+
+# Logs:
+*.log
+
+
+# Mac
+.DS_Store
+._*
+
+#pycharm
+.idea
+.iml
+
+static/*
+media/*
+assets/*
+
+
