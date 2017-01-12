@@ -30,8 +30,6 @@ site_settings.py
 .idea
 .iml
 
-static/*
-media/*
 assets/*
 
 
