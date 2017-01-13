@@ -1,6 +1,3 @@
-/**
- * Created by jorick on 13/01/2017.
- */
 import React from 'react'
 import TextField from 'material-ui/TextField'
 
@@ -31,6 +28,7 @@ class ChangeNameForm extends React.Component{
                     <TextField
                         onChange={this.onKey}
                         value={this.state.text}
+                        hintText="Display name"
                     /><br />
                 </form>
              </div>

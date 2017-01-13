@@ -10,6 +10,17 @@ import UsersList from './Components/UserList'
 
 var socket = io.connect();
 
+const styles = {
+    navbar:{
+		backgroundColor:'#FFF'
+    },
+	titlecolor: {
+		color:"#000"
+	}
+};
+
+const hvaImg = 'https://i.imgsafe.org/92f8dba0d9.png';
+
 var ChatApp = React.createClass({
 
 	getChildContext() {
@@ -69,7 +80,7 @@ var ChatApp = React.createClass({
 		users.splice(index, 1, newName);
 		messages.push({
 			user: 'APPLICATION BOT',
-			text : 'Change Name : ' + oldName + ' ==> '+ newName
+			text : 'Change Name : ' + oldName + ' -> '+ newName
 		});
 		this.setState({users, messages});
 	},
@@ -98,8 +109,8 @@ var ChatApp = React.createClass({
 		return (
 			<div>
 				<AppBar
-					title="Hogeschool van Amsterdam"
-					iconClassNameRight="muidocs-icon-navigation-expand-more"
+					iconElementLeft={<img src={hvaImg}/>}
+					style={styles.navbar}
 				/>
 				<UsersList
 					users={this.state.users}

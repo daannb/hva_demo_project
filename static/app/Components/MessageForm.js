@@ -1,6 +1,3 @@
-/**
- * Created by jorick on 13/01/2017.
- */
 import React from 'react';
 import TextField from 'material-ui/TextField'
 class MessageForm extends React.Component {
@@ -35,7 +32,7 @@ class MessageForm extends React.Component {
                     <TextField
                         onChange={this.changeHandler}
                         value={this.state.text}
-                        hintText="Say something"
+                        hintText="Message"
                     /><br />
                 </form>
             </div>

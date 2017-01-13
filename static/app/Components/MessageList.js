@@ -1,6 +1,3 @@
-/**
- * Created by jorick on 13/01/2017.
- */
 import React from 'react';
 import Message from '../Components/Message'
 import List from'material-ui/List/List'
@@ -10,7 +7,14 @@ import Infinite from 'react-infinite';
 const styles = {
     list:{
         width:600,
-        float:'left'
+        height: window.innerHeight+'px',
+        float:'left',
+        backgroundColor: 'rgb(251, 251, 251)'
+    },
+    messageHeader:{
+        borderBottom: '2px solid rgb(224, 224, 224)',
+        fontFamily: 'Arial',
+        color: '#000'
     }
 };
 
@@ -27,12 +31,13 @@ class MessageList extends React.Component {
         return (
             <div>
                 <List style={styles.list}>
-                    <Subheader>Today</Subheader>
+                    <Subheader style={styles.messageHeader}>Messages</Subheader>
                 <Infinite elementHeight={88}
                           containerHeight={500}
                           displayBottomUpwards
                           timeScrollStateLastsForAfterUserScrolls={0}
                           infiniteLoadBeginEdgeOffset='test'
+
                 >
 
                 {

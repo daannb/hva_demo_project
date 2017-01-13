@@ -1,6 +1,3 @@
-/**
- * Created by jorick on 13/01/2017.
- */
 import React from 'react';
 import ListItem from 'material-ui/List/ListItem';
 import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors';

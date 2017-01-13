@@ -1,6 +1,3 @@
-/**
- * Created by jorick on 13/01/2017.
- */
 import React from 'react';
 import Avatar from 'material-ui/Avatar';
 import {List, ListItem} from 'material-ui/List';
@@ -12,7 +9,14 @@ import CommunicationChatBubble from 'material-ui/svg-icons/communication/chat-bu
 const styles = {
     list:{
         width:300,
-        float:'left'
+        height: window.innerHeight+'px',
+        float:'left',
+        borderRight: '1px solid rgb(224, 224, 224)',
+    },
+    userTitle:{
+        fontFamily: 'Arial',
+        color: '#000',
+        borderBottom: '2px solid rgb(224, 224, 224)'
     }
 };
 
@@ -26,14 +30,14 @@ class Users extends React.Component {
         return (
             <div style={styles.div}>
                 <List style={styles.list}>
-                    <Subheader>Online users</Subheader>
+                    <Subheader style={styles.userTitle}>Online users</Subheader>
                     {
                         this.props.users.map((user, i) => {
                             return (
                                 <div>
                                 <ListItem key = {i}
                                           primaryText={user}
-                                          rightIcon={<CommunicationChatBubble />}
+
                                 />
                                     <Divider />
                                     </div>
