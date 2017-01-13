@@ -1,0 +1,25 @@
+{
+  "name": "reactjs-socket-io-chat-app",
+  "version": "0.6.9",
+  "private": true,
+  "scripts": {
+    "build": "browserify ./app/app.js --watch -t babelify --watch  --outfile ./public/js/app.js",
+    "start": "node app.js",
+    "start-build": "browserify ./app/app.js --watch -t babelify --watch  --outfile ./public/js/app.js && node app.js"
+  },
+  "dependencies": {
+    "envify": "^2.0.0",
+    "express": "^4.14.0",
+    "material-ui": "^0.16.6",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-infinite": "^0.10.0",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0"
+  }
+}
