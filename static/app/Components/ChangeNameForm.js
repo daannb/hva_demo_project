@@ -27,7 +27,7 @@ class ChangeNameForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <TextField
                         onChange={this.onKey}
-                        value={this.state.text}
+                        value={this.state.newName}
                         hintText="Display name"
                     /><br />
                 </form>

@@ -33,7 +33,7 @@ class MessageList extends React.Component {
                 <List style={styles.list}>
                     <Subheader style={styles.messageHeader}>Messages</Subheader>
                 <Infinite elementHeight={88}
-                          containerHeight={500}
+                          containerHeight={450}
                           displayBottomUpwards
                           timeScrollStateLastsForAfterUserScrolls={0}
                           infiniteLoadBeginEdgeOffset='test'
